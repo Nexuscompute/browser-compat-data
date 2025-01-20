@@ -17,6 +17,9 @@
             }
           ],
           "chrome_android": "mirror",
+          "deno": {
+            "version_added": "1.26"
+          },
           "edge": {
             "version_added": "16"
           },
@@ -35,7 +38,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -67,7 +71,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -92,6 +97,9 @@
               }
             ],
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.26"
+            },
             "edge": {
               "version_added": "16"
             },
@@ -110,7 +118,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -128,6 +137,9 @@
               "version_added": "40"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.26"
+            },
             "edge": {
               "version_added": "16"
             },
@@ -146,7 +158,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -164,6 +177,9 @@
               "version_added": "40"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.26"
+            },
             "edge": {
               "version_added": "16"
             },
@@ -182,7 +198,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -200,6 +217,9 @@
               "version_added": "40"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": false
+            },
             "edge": {
               "version_added": "16"
             },
@@ -218,7 +238,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -239,10 +260,13 @@
               {
                 "version_added": "40",
                 "partial_implementation": true,
-                "notes": "The options parameter only supports <code>ignoreSearch</code>, and <code>cacheName</code>."
+                "notes": "The options parameter only supports `ignoreSearch`, and `cacheName`."
               }
             ],
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": false
+            },
             "edge": {
               "version_added": "16"
             },
@@ -261,7 +285,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -279,6 +304,9 @@
               "version_added": "40"
             },
             "chrome_android": "mirror",
+            "deno": {
+              "version_added": "1.26"
+            },
             "edge": {
               "version_added": "16"
             },
@@ -297,7 +325,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

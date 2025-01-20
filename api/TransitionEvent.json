@@ -3,16 +3,19 @@
     "TransitionEvent": {
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/TransitionEvent",
-        "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions/#interface-transitionevent",
+        "spec_url": "https://drafts.csswg.org/css-transitions/#interface-transitionevent",
+        "tags": [
+          "web-features:transitions"
+        ],
         "support": {
           "chrome": [
             {
               "version_added": "27"
             },
             {
+              "prefix": "WebKit",
               "version_added": "2",
-              "version_removed": "71",
-              "prefix": "WebKit"
+              "version_removed": "71"
             }
           ],
           "chrome_android": "mirror",
@@ -66,11 +69,12 @@
               "version_added": "4.4"
             },
             {
+              "prefix": "WebKit",
               "version_added": "≤37",
-              "version_removed": "71",
-              "prefix": "WebKit"
+              "version_removed": "71"
             }
-          ]
+          ],
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -80,9 +84,12 @@
       },
       "TransitionEvent": {
         "__compat": {
-          "description": "<code>TransitionEvent()</code> constructor",
+          "description": "`TransitionEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TransitionEvent/TransitionEvent",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions/#dom-transitionevent-transitionevent",
+          "spec_url": "https://drafts.csswg.org/css-transitions/#dom-transitionevent-transitionevent",
+          "tags": [
+            "web-features:transitions"
+          ],
           "support": {
             "chrome": {
               "version_added": "27"
@@ -101,14 +108,21 @@
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
-            "safari": {
-              "version_added": "preview"
-            },
+            "safari": [
+              {
+                "version_added": "7"
+              },
+              {
+                "prefix": "WebKit",
+                "version_added": "6"
+              }
+            ],
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "2.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -120,7 +134,10 @@
       "elapsedTime": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TransitionEvent/elapsedTime",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions/#Events-TransitionEvent-elapsedTime",
+          "spec_url": "https://drafts.csswg.org/css-transitions/#Events-TransitionEvent-elapsedTime",
+          "tags": [
+            "web-features:transitions"
+          ],
           "support": {
             "chrome": {
               "version_added": "2"
@@ -148,7 +165,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -160,7 +178,10 @@
       "propertyName": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TransitionEvent/propertyName",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions/#Events-TransitionEvent-propertyName",
+          "spec_url": "https://drafts.csswg.org/css-transitions/#Events-TransitionEvent-propertyName",
+          "tags": [
+            "web-features:transitions"
+          ],
           "support": {
             "chrome": {
               "version_added": "2"
@@ -188,7 +209,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -200,7 +222,10 @@
       "pseudoElement": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/TransitionEvent/pseudoElement",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-transitions/#Events-TransitionEvent-pseudoElement",
+          "spec_url": "https://drafts.csswg.org/css-transitions/#Events-TransitionEvent-pseudoElement",
+          "tags": [
+            "web-features:transitions"
+          ],
           "support": {
             "chrome": {
               "version_added": "2"
@@ -222,7 +247,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

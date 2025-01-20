@@ -28,16 +28,20 @@
           },
           "safari": {
             "version_added": "16",
-            "partial_implementation": true,
-            "notes": "Supported on macOS 13 and later"
+            "notes": "Notifications are supported on macOS Ventura and later."
           },
           "safari_ios": {
-            "version_added": false
+            "version_added": "16.4",
+            "notes": "Notifications are supported in web apps saved to the home screen."
           },
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": false,
-            "notes": "See <a href='https://crbug.com/551446'>bug 551446</a>."
+            "impl_url": "https://crbug.com/40443309"
+          },
+          "webview_ios": {
+            "version_added": false,
+            "notes": "Notifications are supported in web apps saved to the home screen."
           }
         },
         "status": {
@@ -48,7 +52,7 @@
       },
       "NotificationEvent": {
         "__compat": {
-          "description": "<code>NotificationEvent()</code> constructor",
+          "description": "`NotificationEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/NotificationEvent/NotificationEvent",
           "spec_url": "https://notifications.spec.whatwg.org/#dom-notificationevent-notificationevent",
           "support": {
@@ -75,15 +79,19 @@
             },
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
+            },
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
             }
           },
           "status": {
@@ -126,7 +134,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -168,7 +177,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

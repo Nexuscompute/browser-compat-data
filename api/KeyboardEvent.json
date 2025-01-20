@@ -33,7 +33,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "≤37"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,7 +44,7 @@
       },
       "KeyboardEvent": {
         "__compat": {
-          "description": "<code>KeyboardEvent()</code> constructor",
+          "description": "`KeyboardEvent()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/KeyboardEvent",
           "spec_url": "https://w3c.github.io/uievents/#dom-keyboardevent-keyboardevent",
           "support": {
@@ -69,7 +70,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -111,7 +113,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -153,7 +156,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -170,12 +174,20 @@
             "chrome": {
               "version_added": "48"
             },
-            "chrome_android": "mirror",
+            "chrome_android": {
+              "version_added": "48",
+              "partial_implementation": true,
+              "notes": "The value is always empty."
+            },
             "edge": "mirror",
             "firefox": {
               "version_added": "38"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": "38",
+              "partial_implementation": true,
+              "notes": "The value is always empty."
+            },
             "ie": {
               "version_added": false
             },
@@ -187,7 +199,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -229,7 +242,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -265,7 +279,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -273,9 +288,9 @@
             "deprecated": false
           }
         },
-        "accel_parameter": {
+        "key_parameter_accel": {
           "__compat": {
-            "description": "<code>\"Accel\"</code> as a parameter",
+            "description": "`\"Accel\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -299,7 +314,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -308,9 +324,9 @@
             }
           }
         },
-        "alt_parameter": {
+        "key_parameter_alt": {
           "__compat": {
-            "description": "<code>\"Alt\"</code> as a parameter",
+            "description": "`\"Alt\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "30"
@@ -334,7 +350,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -343,9 +360,9 @@
             }
           }
         },
-        "altgraph_parameter": {
+        "key_parameter_altgraph": {
           "__compat": {
-            "description": "<code>\"AltGraph\"</code> as a parameter",
+            "description": "`\"AltGraph\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -367,7 +384,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -376,9 +394,9 @@
             }
           }
         },
-        "capslock_parameter": {
+        "key_parameter_capslock": {
           "__compat": {
-            "description": "<code>\"CapsLock\"</code> as a parameter",
+            "description": "`\"CapsLock\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -402,7 +420,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -411,9 +430,9 @@
             }
           }
         },
-        "control_parameter": {
+        "key_parameter_control": {
           "__compat": {
-            "description": "<code>\"Control\"</code> as a parameter",
+            "description": "`\"Control\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "30"
@@ -437,7 +456,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -446,9 +466,9 @@
             }
           }
         },
-        "fn_parameter": {
+        "key_parameter_fn": {
           "__compat": {
-            "description": "<code>\"Fn\"</code> as a parameter",
+            "description": "`\"Fn\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -470,7 +490,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -479,9 +500,9 @@
             }
           }
         },
-        "meta_parameter": {
+        "key_parameter_meta": {
           "__compat": {
-            "description": "<code>\"Meta\"</code> as a parameter",
+            "description": "`\"Meta\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "30"
@@ -503,7 +524,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -512,9 +534,9 @@
             }
           }
         },
-        "numlock_parameter": {
+        "key_parameter_numlock": {
           "__compat": {
-            "description": "<code>\"NumLock\"</code> as a parameter",
+            "description": "`\"NumLock\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -538,7 +560,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -547,9 +570,9 @@
             }
           }
         },
-        "os_parameter": {
+        "key_parameter_os": {
           "__compat": {
-            "description": "<code>\"OS\"</code> as a parameter",
+            "description": "`\"OS\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -560,9 +583,9 @@
                   "version_added": "79"
                 },
                 {
+                  "alternative_name": "Win",
                   "version_added": "12",
-                  "version_removed": "79",
-                  "alternative_name": "Win"
+                  "version_removed": "79"
                 }
               ],
               "firefox": {
@@ -570,8 +593,8 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": "9",
-                "alternative_name": "Win"
+                "alternative_name": "Win",
+                "version_added": "9"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -581,7 +604,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -590,9 +614,9 @@
             }
           }
         },
-        "scrolllock_parameter": {
+        "key_parameter_scrolllock": {
           "__compat": {
-            "description": "<code>\"ScrollLock\"</code> as a parameter",
+            "description": "`\"ScrollLock\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -603,9 +627,9 @@
                   "version_added": "79"
                 },
                 {
+                  "alternative_name": "Scroll",
                   "version_added": "12",
-                  "version_removed": "79",
-                  "alternative_name": "Scroll"
+                  "version_removed": "79"
                 }
               ],
               "firefox": {
@@ -613,8 +637,8 @@
               },
               "firefox_android": "mirror",
               "ie": {
-                "version_added": "9",
-                "alternative_name": "Scroll"
+                "alternative_name": "Scroll",
+                "version_added": "9"
               },
               "oculus": "mirror",
               "opera": "mirror",
@@ -624,7 +648,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -633,9 +658,9 @@
             }
           }
         },
-        "shift_parameter": {
+        "key_parameter_shift": {
           "__compat": {
-            "description": "<code>\"Shift\"</code> as a parameter",
+            "description": "`\"Shift\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "30"
@@ -659,7 +684,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -668,9 +694,9 @@
             }
           }
         },
-        "symbol_parameter": {
+        "key_parameter_symbol": {
           "__compat": {
-            "description": "<code>\"Symbol\"</code> as a parameter",
+            "description": "`\"Symbol\"` as `key` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -692,7 +718,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -704,6 +731,7 @@
       },
       "initKeyboardEvent": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/KeyboardEvent/initKeyboardEvent",
           "spec_url": "https://w3c.github.io/uievents/#dom-keyboardevent-initkeyboardevent",
           "support": {
             "chrome": {
@@ -734,7 +762,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -768,7 +797,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -805,7 +835,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -825,7 +856,7 @@
                 "version_added": "≤79"
               },
               "firefox": {
-                "version_added": false
+                "version_added": "37"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -839,7 +870,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -875,7 +907,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -911,7 +944,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -954,7 +988,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -988,7 +1023,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1024,7 +1060,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1047,7 +1084,7 @@
             },
             "firefox": {
               "version_added": "1.5",
-              "notes": "Since Firefox 48, the Windows key is no longer treated as a <code>meta</code> key."
+              "notes": "Since Firefox 48, the Windows key is no longer treated as a `meta` key."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -1067,7 +1104,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1082,7 +1120,9 @@
           "spec_url": "https://w3c.github.io/uievents/#dom-keyboardevent-repeat",
           "support": {
             "chrome": {
-              "version_added": "32"
+              "version_added": "32",
+              "partial_implementation": true,
+              "notes": "On Windows and Linux, if multiple keys are held down, a `keydown` event for the most recently pressed key will trigger with `repeat` incorrectly set to `false`. See [bug 40940886](https://crbug.com/40940886)."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -1103,7 +1143,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -1145,7 +1186,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "≤37"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

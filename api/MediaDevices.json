@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDevices",
         "spec_url": "https://w3c.github.io/mediacapture-main/#mediadevices",
+        "tags": [
+          "web-features:media-capture"
+        ],
         "support": {
           "chrome": {
             "version_added": "47"
@@ -33,7 +36,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -43,7 +47,7 @@
       },
       "devicechange_event": {
         "__compat": {
-          "description": "<code>devicechange</code> event",
+          "description": "`devicechange` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDevices/devicechange_event",
           "spec_url": [
             "https://w3c.github.io/mediacapture-main/#event-mediadevices-devicechange",
@@ -70,15 +74,14 @@
             "opera": {
               "version_added": "34"
             },
-            "opera_android": {
-              "version_added": "43"
-            },
+            "opera_android": "mirror",
             "safari": {
               "version_added": "11"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -91,6 +94,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDevices/enumerateDevices",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-enumeratedevices",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "47"
@@ -101,18 +107,13 @@
             },
             "firefox": [
               {
-                "version_added": "39"
+                "version_added": "116",
+                "notes": "`enumerateDevices()` enumerates both input and output devices. Previously only input devices were returned."
               },
               {
-                "version_added": "63",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "media.setsinkid.enabled",
-                    "value_to_set": "true"
-                  }
-                ],
-                "notes": "Before Firefox 63, <code>enumerateDevices()</code> only returned input devices. Starting with Firefox 63, output devices are also included if the <code>media.setsinkid.enabled</code> preference is enabled."
+                "version_added": "39",
+                "partial_implementation": true,
+                "notes": "`enumerateDevices()` only returns input devices."
               }
             ],
             "firefox_android": "mirror",
@@ -127,7 +128,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -138,16 +140,19 @@
       },
       "getDisplayMedia": {
         "__compat": {
-          "description": "<code>getDisplayMedia()</code>",
+          "description": "`getDisplayMedia()`",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDevices/getDisplayMedia",
           "spec_url": "https://w3c.github.io/mediacapture-screen-share/#dom-mediadevices-getdisplaymedia",
+          "tags": [
+            "web-features:screen-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "72"
             },
             "chrome_android": {
               "version_added": false,
-              "notes": "From Chrome Android 72 to 88, this method was exposed, but always failed with <code>NotAllowedError</code>. See <a href='https://crbug.com/487935'>bug 487935</a>."
+              "notes": "From Chrome Android 72 to 88, this method was exposed, but always failed with `NotAllowedError`. See [bug 40418135](https://crbug.com/40418135)."
             },
             "edge": [
               {
@@ -157,7 +162,7 @@
                 "version_added": "17",
                 "version_removed": "79",
                 "partial_implementation": true,
-                "notes": "Available as a member of <code>Navigator</code> instead of <code>MediaDevices</code>."
+                "notes": "Available as a member of `Navigator` instead of `MediaDevices`."
               }
             ],
             "firefox": [
@@ -167,12 +172,12 @@
               {
                 "version_added": "33",
                 "version_removed": "66",
-                "notes": "Since Firefox 33 you can capture screen data using <code><a href='https://developer.mozilla.org/docs/Web/API/MediaDevices/getUserMedia'>getUserMedia()</a></code>, with a <code>video</code> constraint called <code>mediaSource</code>. Before 52 it relied on a client-configurable list of allowed sites."
+                "notes": "Since Firefox 33 you can capture screen data using [`getUserMedia()`](https://developer.mozilla.org/docs/Web/API/MediaDevices/getUserMedia), with a `video` constraint called `mediaSource`. Before 52 it relied on a client-configurable list of allowed sites."
               }
             ],
             "firefox_android": {
               "version_added": false,
-              "notes": "From Firefox Android 66 to 79, this method was exposed, but always failed with <code>NotAllowedError</code>."
+              "notes": "From Firefox Android 66 to 79, this method was exposed, but always failed with `NotAllowedError`."
             },
             "ie": {
               "version_added": false
@@ -187,7 +192,8 @@
               "version_added": false
             },
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -199,18 +205,18 @@
           "__compat": {
             "description": "Audio capture support",
             "mdn_url": "https://developer.mozilla.org/docs/Web/API/Screen_Capture_API/Using_Screen_Capture#Capturing_shared_audio",
+            "tags": [
+              "web-features:screen-capture"
+            ],
             "support": {
               "chrome": {
                 "version_added": "74",
-                "notes": "On Windows and Chrome OS the entire system audio can be captured, but on Linux and macOS only the audio of a tab can be captured."
+                "notes": "On Windows and ChromeOS, the entire system audio can be captured when sharing an entire screen. On Linux and macOS, only the audio of a tab can be captured."
               },
               "chrome_android": {
                 "version_added": false
               },
-              "edge": {
-                "version_added": "≤79",
-                "notes": "On Windows, the entire system audio can be captured, but on Linux and macOS only the audio of a tab can be captured."
-              },
+              "edge": "mirror",
               "firefox": {
                 "version_added": false
               },
@@ -219,17 +225,15 @@
                 "version_added": false
               },
               "oculus": "mirror",
-              "opera": {
-                "version_added": "62",
-                "notes": "On Windows, the entire system audio can be captured, but on Linux and macOS only the audio of a tab can be captured."
-              },
+              "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
                 "version_added": false
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -240,8 +244,11 @@
         },
         "controller_option": {
           "__compat": {
-            "description": "<code>controller</code> option",
+            "description": "`controller` option",
             "spec_url": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-controller",
+            "tags": [
+              "web-features:screen-capture"
+            ],
             "support": {
               "chrome": {
                 "version_added": "109"
@@ -265,7 +272,49 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": true,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "monitorTypeSurfaces_option": {
+          "__compat": {
+            "description": "`monitorTypeSurfaces` option",
+            "spec_url": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-monitortypesurfaces",
+            "tags": [
+              "web-features:screen-capture"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "119",
+                "notes": "Default value = `include`"
+              },
+              "chrome_android": {
+                "version_added": false
+              },
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -276,10 +325,11 @@
         },
         "preferCurrentTab_option": {
           "__compat": {
-            "description": "<code>preferCurrentTab</code> option",
+            "description": "`preferCurrentTab` option",
             "support": {
               "chrome": {
-                "version_added": "94"
+                "version_added": "94",
+                "notes": "Default value = `false`"
               },
               "chrome_android": {
                 "version_added": false
@@ -300,7 +350,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -311,12 +362,23 @@
         },
         "selfBrowserSurface_option": {
           "__compat": {
-            "description": "<code>selfBrowserSurface</code> option",
+            "description": "`selfBrowserSurface` option",
             "spec_url": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-selfbrowsersurface",
+            "tags": [
+              "web-features:screen-capture"
+            ],
             "support": {
-              "chrome": {
-                "version_added": "107"
-              },
+              "chrome": [
+                {
+                  "version_added": "112",
+                  "notes": "Default value = `exclude`"
+                },
+                {
+                  "version_added": "107",
+                  "version_removed": "111",
+                  "notes": "Default value = `include`"
+                }
+              ],
               "chrome_android": {
                 "version_added": false
               },
@@ -336,7 +398,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -347,11 +410,15 @@
         },
         "surfaceSwitching_option": {
           "__compat": {
-            "description": "<code>surfaceSwitching</code> option",
+            "description": "`surfaceSwitching` option",
             "spec_url": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-surfaceswitching",
+            "tags": [
+              "web-features:screen-capture"
+            ],
             "support": {
               "chrome": {
-                "version_added": "107"
+                "version_added": "107",
+                "notes": "Default value = `exclude`"
               },
               "chrome_android": {
                 "version_added": false
@@ -372,7 +439,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -383,11 +451,15 @@
         },
         "systemAudio_option": {
           "__compat": {
-            "description": "<code>systemAudio</code> option",
+            "description": "`systemAudio` option",
             "spec_url": "https://w3c.github.io/mediacapture-screen-share/#dom-displaymediastreamoptions-systemaudio",
+            "tags": [
+              "web-features:screen-capture"
+            ],
             "support": {
               "chrome": {
-                "version_added": "105"
+                "version_added": "105",
+                "notes": "Default value = `include`"
               },
               "chrome_android": {
                 "version_added": false
@@ -408,7 +480,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -451,7 +524,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "53"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -464,10 +538,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaDevices/getUserMedia",
           "spec_url": "https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia",
+          "tags": [
+            "web-features:media-capture"
+          ],
           "support": {
             "chrome": {
               "version_added": "53",
-              "notes": "If you need this capability before version 53, refer to <code>navigator.webkitGetUserMedia</code>, a prefixed form of the deprecated <a href='https://developer.mozilla.org/docs/Web/API/Navigator/getUserMedia'><code>navigator.getUserMedia</code></a> API."
+              "notes": "If you need this capability before version 53, refer to `navigator.webkitGetUserMedia`, a prefixed form of the deprecated [`navigator.getUserMedia`](https://developer.mozilla.org/docs/Web/API/Navigator/getUserMedia) API."
             },
             "chrome_android": "mirror",
             "edge": {
@@ -476,10 +553,10 @@
             "firefox": {
               "version_added": "36",
               "notes": [
-                "If you need this capability before version 36, refer to <code>navigator.mozGetUserMedia</code>, a prefixed form of the deprecated <a href='https://developer.mozilla.org/docs/Web/API/Navigator/getUserMedia'><code>navigator.getUserMedia</code></a> API.",
-                "Before Firefox 55, <code>getUserMedia()</code> incorrectly returns <code>NotSupportedError</code> when the list of constraints specified is empty, or has all constraints set to <code>false</code>. Starting in Firefox 55, this situation now correctly calls the failure handler with a <code>TypeError</code>.",
-                "When using the Firefox-specific <code>video</code> constraint called <code>mediaSource</code> to request display capture, Firefox 66 and later consider values of <code>screen</code> and <code>window</code> to both cause a list of screens <em>and</em> windows to be shown.",
-                "Starting in Firefox 66, <code>getUserMedia()</code> can no longer be used in sandboxed <code>&lt;iframe&gt;</code>s or <code>data</code> URLs entered in the address bar by the user."
+                "If you need this capability before version 36, refer to `navigator.mozGetUserMedia`, a prefixed form of the deprecated [`navigator.getUserMedia`](https://developer.mozilla.org/docs/Web/API/Navigator/getUserMedia) API.",
+                "Before Firefox 55, `getUserMedia()` incorrectly returns `NotSupportedError` when the list of constraints specified is empty, or has all constraints set to `false`. Starting in Firefox 55, this situation now correctly calls the failure handler with a `TypeError`.",
+                "When using the Firefox-specific `video` constraint called `mediaSource` to request display capture, Firefox 66 and later consider values of `screen` and `window` to both cause a list of screens _and_ windows to be shown.",
+                "Starting in Firefox 66, `getUserMedia()` can no longer be used in sandboxed `&lt;iframe&gt;`s or `data` URLs entered in the address bar by the user."
               ]
             },
             "firefox_android": "mirror",
@@ -498,7 +575,8 @@
             },
             "webview_android": {
               "version_added": "53"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -530,7 +608,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -546,21 +625,17 @@
           "spec_url": "https://w3c.github.io/mediacapture-output/#dom-mediadevices-selectaudiooutput",
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://crbug.com/372214870"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "88",
-              "flags": [
-                {
-                  "type": "preference",
-                  "name": "media.setsinkid.enabled",
-                  "value_to_set": "true"
-                }
-              ]
+              "version_added": "116"
             },
-            "firefox_android": "mirror",
+            "firefox_android": {
+              "version_added": false
+            },
             "ie": {
               "version_added": false
             },
@@ -568,11 +643,13 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/216641"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -607,7 +684,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

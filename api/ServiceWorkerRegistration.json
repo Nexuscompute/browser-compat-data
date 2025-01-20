@@ -7,6 +7,9 @@
           "https://w3c.github.io/ServiceWorker/#serviceworkerregistration-interface",
           "https://w3c.github.io/push-api/#extensions-to-the-serviceworkerregistration-interface"
         ],
+        "tags": [
+          "web-features:push"
+        ],
         "support": {
           "chrome": {
             "version_added": "40"
@@ -30,7 +33,10 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": {
+            "version_added": false
+          }
         },
         "status": {
           "experimental": false,
@@ -65,7 +71,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -78,6 +87,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/backgroundFetch",
           "spec_url": "https://wicg.github.io/background-fetch/#dom-serviceworkerregistration-backgroundfetch",
+          "tags": [
+            "web-features:background-fetch"
+          ],
           "support": {
             "chrome": {
               "version_added": "74"
@@ -101,7 +113,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -112,6 +125,7 @@
       },
       "cookies": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/cookies",
           "spec_url": "https://wicg.github.io/cookie-store/#dom-serviceworkerregistration-cookies",
           "support": {
             "chrome": {
@@ -134,7 +148,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -167,16 +182,20 @@
             "opera_android": "mirror",
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/551446'>bug 551446</a>."
+              "impl_url": "https://crbug.com/40443309"
+            },
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
             }
           },
           "status": {
@@ -213,7 +232,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -249,7 +269,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -287,7 +310,10 @@
             "samsunginternet_android": {
               "version_added": "4.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -300,6 +326,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/paymentManager",
           "spec_url": "https://w3c.github.io/payment-handler/#dom-serviceworkerregistration-paymentmanager",
+          "tags": [
+            "web-features:payment-handler"
+          ],
           "support": {
             "chrome": {
               "version_added": "70"
@@ -307,7 +336,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://bugzil.la/1465682"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -323,7 +353,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -357,7 +388,11 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": {
+              "version_added": false,
+              "impl_url": "https://crbug.com/40151529"
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -370,6 +405,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/pushManager",
           "spec_url": "https://w3c.github.io/push-api/#dom-serviceworkerregistration-pushmanager",
+          "tags": [
+            "web-features:push"
+          ],
           "support": {
             "chrome": {
               "version_added": "40"
@@ -392,16 +430,19 @@
             "opera_android": "mirror",
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
+              "version_added": false
+            },
+            "webview_ios": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/421921'>bug 421921</a>."
+              "notes": "Notifications are supported in web apps saved to the home screen."
             }
           },
           "status": {
@@ -438,7 +479,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -471,16 +515,20 @@
             "opera_android": "mirror",
             "safari": {
               "version_added": "16",
-              "partial_implementation": true,
-              "notes": "Supported on macOS 13 and later"
+              "notes": "Notifications are supported on macOS Ventura and later."
             },
             "safari_ios": {
-              "version_added": false
+              "version_added": "16.4",
+              "notes": "Notifications are supported in web apps saved to the home screen."
             },
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/421921'>bug 421921</a>."
+              "impl_url": "https://crbug.com/40443309"
+            },
+            "webview_ios": {
+              "version_added": false,
+              "notes": "Notifications are supported in web apps saved to the home screen."
             }
           },
           "status": {
@@ -491,7 +539,7 @@
         },
         "options_actions_parameter": {
           "__compat": {
-            "description": "<code>options.actions</code> parameter",
+            "description": "`options.actions` parameter",
             "support": {
               "chrome": {
                 "version_added": "48"
@@ -517,7 +565,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -528,7 +577,7 @@
         },
         "options_badge_parameter": {
           "__compat": {
-            "description": "<code>options.badge</code> parameter",
+            "description": "`options.badge` parameter",
             "support": {
               "chrome": {
                 "version_added": "53"
@@ -550,16 +599,22 @@
               },
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "17",
+                "notes": "Badging is supported for web apps saved to the Dock in Safari 17 on the macOS Sonoma beta"
               },
-              "safari_ios": "mirror",
+              "safari_ios": {
+                "version_added": "16.4"
+              },
               "samsunginternet_android": "mirror",
               "webview_android": {
+                "version_added": false
+              },
+              "webview_ios": {
                 "version_added": false
               }
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -567,7 +622,7 @@
         },
         "options_data_parameter": {
           "__compat": {
-            "description": "<code>options.data</code> parameter",
+            "description": "`options.data` parameter",
             "support": {
               "chrome": {
                 "version_added": "44"
@@ -593,7 +648,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -604,7 +660,7 @@
         },
         "options_image_parameter": {
           "__compat": {
-            "description": "<code>options.image</code> parameter",
+            "description": "`options.image` parameter",
             "support": {
               "chrome": {
                 "version_added": "56"
@@ -630,7 +686,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -641,7 +698,7 @@
         },
         "options_renotify_parameter": {
           "__compat": {
-            "description": "<code>options.renotify</code> parameter",
+            "description": "`options.renotify` parameter",
             "support": {
               "chrome": {
                 "version_added": "50"
@@ -667,7 +724,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -678,7 +736,7 @@
         },
         "options_requireInteraction_parameter": {
           "__compat": {
-            "description": "<code>options.requireInteraction</code> parameter",
+            "description": "`options.requireInteraction` parameter",
             "support": {
               "chrome": {
                 "version_added": "47"
@@ -704,7 +762,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -715,12 +774,15 @@
         },
         "options_vibrate_parameter": {
           "__compat": {
-            "description": "<code>options.vibrate</code> parameter",
+            "description": "`options.vibrate` parameter",
             "support": {
               "chrome": {
                 "version_added": "45"
               },
-              "chrome_android": "mirror",
+              "chrome_android": {
+                "version_added": false,
+                "notes": "In Android Oreo and above, regardless of Chrome version, this parameter has no effect. See <a href='https://crbug.com/40630890'>bug 40630890</a>."
+              },
               "edge": {
                 "version_added": "≤79"
               },
@@ -741,7 +803,8 @@
               "samsunginternet_android": "mirror",
               "webview_android": {
                 "version_added": false
-              }
+              },
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": true,
@@ -755,6 +818,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/sync",
           "spec_url": "https://wicg.github.io/background-sync/spec/#dom-serviceworkerregistration-sync",
+          "tags": [
+            "web-features:background-sync"
+          ],
           "support": {
             "chrome": {
               "version_added": "49"
@@ -772,16 +838,18 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
-              "version_added": false
+              "version_added": false,
+              "impl_url": "https://webkit.org/b/182565"
             },
             "safari_ios": "mirror",
             "samsunginternet_android": {
               "version_added": "4.0"
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
-            "experimental": true,
+            "experimental": false,
             "standard_track": true,
             "deprecated": false
           }
@@ -814,7 +882,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -860,7 +931,10 @@
                 "Before Samsung Internet 5.0, this method always bypassed the browser cache. Starting with Samsung Internet 5.0, it only bypasses the cache when the previous service worker check was more than twenty-four hours ago."
               ]
             },
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -871,7 +945,7 @@
       },
       "updatefound_event": {
         "__compat": {
-          "description": "<code>updatefound</code> event",
+          "description": "`updatefound` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/ServiceWorkerRegistration/updatefound_event",
           "spec_url": "https://w3c.github.io/ServiceWorker/#dom-serviceworkerregistration-onupdatefound",
           "support": {
@@ -897,7 +971,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -933,7 +1010,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,
@@ -969,7 +1049,10 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": {
+              "version_added": false
+            }
           },
           "status": {
             "experimental": false,

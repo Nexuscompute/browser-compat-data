@@ -4,13 +4,17 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/XRHand",
         "spec_url": "https://immersive-web.github.io/webxr-hand-input/#xrhand-interface",
+        "tags": [
+          "web-features:webxr-hand-input"
+        ],
         "support": {
           "chrome": {
-            "version_added": false
+            "version_added": "131"
           },
           "chrome_android": "mirror",
           "edge": {
             "version_added": "93",
+            "version_removed": "111",
             "notes": "Hololens 2 only."
           },
           "firefox": {
@@ -30,7 +34,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -40,13 +45,17 @@
       },
       "entries": {
         "__compat": {
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -64,7 +73,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -75,13 +85,17 @@
       },
       "forEach": {
         "__compat": {
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -99,7 +113,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -110,13 +125,17 @@
       },
       "get": {
         "__compat": {
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -134,7 +153,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -145,13 +165,17 @@
       },
       "keys": {
         "__compat": {
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -169,7 +193,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -180,13 +205,17 @@
       },
       "size": {
         "__compat": {
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -204,7 +233,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -215,13 +245,17 @@
       },
       "values": {
         "__compat": {
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -239,7 +273,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -250,13 +285,18 @@
       },
       "@@iterator": {
         "__compat": {
+          "description": "[Symbol.iterator]",
+          "tags": [
+            "web-features:webxr-hand-input"
+          ],
           "support": {
             "chrome": {
-              "version_added": false
+              "version_added": "131"
             },
             "chrome_android": "mirror",
             "edge": {
               "version_added": "93",
+              "version_removed": "111",
               "notes": "Hololens 2 only."
             },
             "firefox": {
@@ -274,7 +314,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

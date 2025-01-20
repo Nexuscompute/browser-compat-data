@@ -26,7 +26,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": true,
@@ -34,8 +35,9 @@
           "deprecated": false
         }
       },
-      "fromElement": {
+      "fromElement_static": {
         "__compat": {
+          "description": "`fromElement()` static method",
           "spec_url": "https://w3c.github.io/mediacapture-region/#dom-croptarget-fromelement",
           "support": {
             "chrome": {
@@ -60,7 +62,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,

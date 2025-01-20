@@ -5,23 +5,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/mspace",
           "spec_url": "https://w3c.github.io/mathml-core/#space-mspace",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
-            "chrome": [
-              {
-                "version_added": "109"
-              },
-              {
-                "version_added": "81",
-                "impl_url": "https://crrev.com/c/1936251",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
-              }
-            ],
+            "chrome": {
+              "version_added": "109"
+            },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
@@ -39,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -49,22 +40,14 @@
         },
         "depth": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mspace-depth",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
-              "chrome": [
-                {
-                  "version_added": "109"
-                },
-                {
-                  "version_added": "81",
-                  "flags": [
-                    {
-                      "type": "preference",
-                      "name": "#enable-experimental-web-platform-features",
-                      "value_to_set": "Enabled"
-                    }
-                  ]
-                }
-              ],
+              "chrome": {
+                "version_added": "109"
+              },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
@@ -82,7 +65,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -93,22 +77,14 @@
         },
         "height": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mspace-height",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
-              "chrome": [
-                {
-                  "version_added": "109"
-                },
-                {
-                  "version_added": "81",
-                  "flags": [
-                    {
-                      "type": "preference",
-                      "name": "#enable-experimental-web-platform-features",
-                      "value_to_set": "Enabled"
-                    }
-                  ]
-                }
-              ],
+              "chrome": {
+                "version_added": "109"
+              },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
@@ -126,7 +102,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -137,8 +114,8 @@
         },
         "named_spaces": {
           "__compat": {
-            "description": "Named spaces (e.g. <code>thinmathspace</code> to mean 3/18em) for <code>width</code>, <code>height</code> and <code>depth</code> attributes",
-            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Attribute/Values#legacy_mathml_lengths",
+            "description": "Named spaces (e.g. `thinmathspace` to mean 3/18em) for `width`, `height` and `depth` attributes",
+            "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Values",
             "support": {
               "chrome": {
                 "version_added": false
@@ -160,7 +137,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -171,22 +149,14 @@
         },
         "width": {
           "__compat": {
+            "spec_url": "https://w3c.github.io/mathml-core/#attribute-mspace-width",
+            "tags": [
+              "web-features:mathml"
+            ],
             "support": {
-              "chrome": [
-                {
-                  "version_added": "109"
-                },
-                {
-                  "version_added": "81",
-                  "flags": [
-                    {
-                      "type": "preference",
-                      "name": "#enable-experimental-web-platform-features",
-                      "value_to_set": "Enabled"
-                    }
-                  ]
-                }
-              ],
+              "chrome": {
+                "version_added": "109"
+              },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
@@ -205,7 +175,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

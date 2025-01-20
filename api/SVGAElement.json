@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGAElement",
         "spec_url": "https://svgwg.org/svg2-draft/linking.html#InterfaceSVGAElement",
+        "tags": [
+          "web-features:svg"
+        ],
         "support": {
           "chrome": {
             "version_added": "1"
@@ -35,7 +38,8 @@
           "samsunginternet_android": "mirror",
           "webview_android": {
             "version_added": "3"
-          }
+          },
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -46,6 +50,9 @@
       "download": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__download",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -67,7 +74,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -78,7 +86,11 @@
       },
       "href": {
         "__compat": {
-          "spec_url": "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-href",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGAElement/href",
+          "spec_url": "https://svgwg.org/svg2-draft/types.html#__svg__SVGURIReference__href",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -110,7 +122,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -122,6 +135,9 @@
       "hreflang": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__hreflang",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -143,7 +159,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -162,7 +179,9 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "61"
+              "version_added": "61",
+              "partial_implementation": true,
+              "notes": "This property is exposed but has no effect if the `browser.send_pings` preference is not set to `true`. See [bug 951104](https://bugzil.la/951104)."
             },
             "firefox_android": "mirror",
             "ie": {
@@ -176,7 +195,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -188,6 +208,9 @@
       "referrerPolicy": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__referrerPolicy",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -209,7 +232,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -221,10 +245,13 @@
       "rel": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__rel",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/873988'>bug 873988</a>."
+              "impl_url": "https://crbug.com/40589293"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -243,7 +270,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -255,10 +283,13 @@
       "relList": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__relList",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false,
-              "notes": "See <a href='https://crbug.com/873988'>bug 873988</a>."
+              "impl_url": "https://crbug.com/40589293"
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -277,7 +308,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -290,6 +322,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/SVGAElement/target",
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__target",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": "1"
@@ -321,7 +356,8 @@
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "3"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -340,7 +376,8 @@
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
-              "version_added": "61"
+              "version_added": "61",
+              "version_removed": "125"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -354,18 +391,22 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
-            "deprecated": false
+            "deprecated": true
           }
         }
       },
       "type": {
         "__compat": {
           "spec_url": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__type",
+          "tags": [
+            "web-features:svg"
+          ],
           "support": {
             "chrome": {
               "version_added": false
@@ -387,7 +428,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

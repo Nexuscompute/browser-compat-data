@@ -4,6 +4,9 @@
       "__compat": {
         "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle",
         "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle",
+        "tags": [
+          "web-features:origin-private-file-system"
+        ],
         "support": {
           "chrome": {
             "version_added": "102"
@@ -13,7 +16,7 @@
           },
           "edge": "mirror",
           "firefox": {
-            "version_added": false
+            "version_added": "111"
           },
           "firefox_android": "mirror",
           "ie": {
@@ -27,7 +30,8 @@
           },
           "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -39,6 +43,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/close",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-close",
+          "tags": [
+            "web-features:origin-private-file-system"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -48,7 +55,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -62,7 +69,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -72,24 +80,20 @@
         },
         "sync_version": {
           "__compat": {
-            "description": "Synchronous implementation of the <code>close()</code> method",
+            "description": "Synchronous implementation of the `close()` method",
+            "tags": [
+              "web-features:origin-private-file-system"
+            ],
             "support": {
               "chrome": {
-                "version_added": "108",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "Sync Access Handle All Sync Surface",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "108"
               },
               "chrome_android": {
                 "version_added": "109"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "111"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -99,14 +103,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -117,6 +122,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/flush",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-flush",
+          "tags": [
+            "web-features:origin-private-file-system"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -126,7 +134,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -140,7 +148,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -150,24 +159,20 @@
         },
         "sync_version": {
           "__compat": {
-            "description": "Synchronous implementation of the <code>flush()</code> method",
+            "description": "Synchronous implementation of the `flush()` method",
+            "tags": [
+              "web-features:origin-private-file-system"
+            ],
             "support": {
               "chrome": {
-                "version_added": "108",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "Sync Access Handle All Sync Surface",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "108"
               },
               "chrome_android": {
                 "version_added": "109"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "111"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -177,14 +182,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -195,6 +201,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/getSize",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-getsize",
+          "tags": [
+            "web-features:origin-private-file-system"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -204,7 +213,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -218,7 +227,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -228,24 +238,20 @@
         },
         "sync_version": {
           "__compat": {
-            "description": "Synchronous implementation of the <code>getSize()</code> method",
+            "description": "Synchronous implementation of the `getSize()` method",
+            "tags": [
+              "web-features:origin-private-file-system"
+            ],
             "support": {
               "chrome": {
-                "version_added": "108",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "Sync Access Handle All Sync Surface",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "108"
               },
               "chrome_android": {
                 "version_added": "109"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "111"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -255,14 +261,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -273,6 +280,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/read",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-read",
+          "tags": [
+            "web-features:origin-private-file-system"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -282,7 +292,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -296,7 +306,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -309,6 +320,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/truncate",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-truncate",
+          "tags": [
+            "web-features:origin-private-file-system"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -318,7 +332,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -332,7 +346,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -342,24 +357,20 @@
         },
         "sync_version": {
           "__compat": {
-            "description": "Synchronous implementation of the <code>truncate()</code> method",
+            "description": "Synchronous implementation of the `truncate()` method",
+            "tags": [
+              "web-features:origin-private-file-system"
+            ],
             "support": {
               "chrome": {
-                "version_added": "108",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "Sync Access Handle All Sync Surface",
-                    "value_to_set": "Enabled"
-                  }
-                ]
+                "version_added": "108"
               },
               "chrome_android": {
                 "version_added": "109"
               },
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "111"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -369,14 +380,15 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
-                "version_added": false
+                "version_added": "16.4"
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
-              "experimental": true,
+              "experimental": false,
               "standard_track": true,
               "deprecated": false
             }
@@ -387,6 +399,9 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/FileSystemSyncAccessHandle/write",
           "spec_url": "https://fs.spec.whatwg.org/#api-filesystemsyncaccesshandle-write",
+          "tags": [
+            "web-features:origin-private-file-system"
+          ],
           "support": {
             "chrome": {
               "version_added": "102"
@@ -396,7 +411,7 @@
             },
             "edge": "mirror",
             "firefox": {
-              "version_added": false
+              "version_added": "111"
             },
             "firefox_android": "mirror",
             "ie": {
@@ -410,7 +425,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,

@@ -5,23 +5,13 @@
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/MathML/Element/msubsup",
           "spec_url": "https://w3c.github.io/mathml-core/#subscripts-and-superscripts-msub-msup-msubsup",
+          "tags": [
+            "web-features:mathml"
+          ],
           "support": {
-            "chrome": [
-              {
-                "version_added": "109"
-              },
-              {
-                "version_added": "84",
-                "impl_url": "https://crrev.com/c/2128081",
-                "flags": [
-                  {
-                    "type": "preference",
-                    "name": "#enable-experimental-web-platform-features",
-                    "value_to_set": "Enabled"
-                  }
-                ]
-              }
-            ],
+            "chrome": {
+              "version_added": "109"
+            },
             "chrome_android": "mirror",
             "edge": "mirror",
             "firefox": {
@@ -39,7 +29,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -71,7 +62,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -104,7 +96,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,

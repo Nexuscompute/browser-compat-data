@@ -12,7 +12,7 @@
           "edge": "mirror",
           "firefox": {
             "version_added": "25",
-            "notes": "Before Firefox 58, using <code>MediaStream.addTrack()</code> on a stream obtained using <code>getUserMedia()</code>, then attempting to record the resulting stream would result in only recording the original stream without the added tracks (severe bug)."
+            "notes": "Before Firefox 58, using `MediaStream.addTrack()` on a stream obtained using `getUserMedia()`, then attempting to record the resulting stream would result in only recording the original stream without the added tracks (severe bug)."
           },
           "firefox_android": "mirror",
           "ie": {
@@ -26,11 +26,14 @@
             "version_added": "36"
           },
           "safari": {
+            "version_added": "14.1"
+          },
+          "safari_ios": {
             "version_added": "14"
           },
-          "safari_ios": "mirror",
           "samsunginternet_android": "mirror",
-          "webview_android": "mirror"
+          "webview_android": "mirror",
+          "webview_ios": "mirror"
         },
         "status": {
           "experimental": false,
@@ -40,7 +43,7 @@
       },
       "MediaRecorder": {
         "__compat": {
-          "description": "<code>MediaRecorder()</code> constructor",
+          "description": "`MediaRecorder()` constructor",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/MediaRecorder",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-mediarecorder",
           "support": {
@@ -64,11 +67,14 @@
               "version_added": "36"
             },
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -78,7 +84,7 @@
         },
         "options_parameter": {
           "__compat": {
-            "description": "<code>options</code> parameter",
+            "description": "`options` parameter",
             "support": {
               "chrome": {
                 "version_added": "49"
@@ -96,11 +102,14 @@
               "opera": "mirror",
               "opera_android": "mirror",
               "safari": {
+                "version_added": "14.1"
+              },
+              "safari_ios": {
                 "version_added": "14"
               },
-              "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -112,6 +121,7 @@
       },
       "audioBitrateMode": {
         "__compat": {
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/audioBitrateMode",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-audiobitratemode",
           "support": {
             "chrome": {
@@ -134,7 +144,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": true,
@@ -168,7 +179,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -179,7 +191,7 @@
       },
       "dataavailable_event": {
         "__compat": {
-          "description": "<code>dataavailable</code> event",
+          "description": "`dataavailable` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/dataavailable_event",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-ondataavailable",
           "support": {
@@ -199,11 +211,14 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -214,14 +229,14 @@
       },
       "error_event": {
         "__compat": {
-          "description": "<code>error</code> event",
+          "description": "`error` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/error_event",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onerror",
           "support": {
             "chrome": {
               "version_added": "49",
               "partial_implementation": true,
-              "notes": "The interface for this event is a plain <a href='https://developer.mozilla.org/docs/Web/API/Event'><code>Event</code></a>, not <a href='https://developer.mozilla.org/docs/Web/API/MediaRecorderErrorEvent'><code>MediaRecorderErrorEvent</code></a>. See <a href='https://crbug.com/1250432'>bug 1250432</a>."
+              "notes": "The interface for this event is a plain [`Event`](https://developer.mozilla.org/docs/Web/API/Event), not [`ErrorEvent`](https://developer.mozilla.org/docs/Web/API/ErrorEvent). See [bug 40791876](https://crbug.com/40791876)."
             },
             "chrome_android": "mirror",
             "edge": "mirror",
@@ -236,11 +251,14 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -249,9 +267,10 @@
           }
         }
       },
-      "isTypeSupported": {
+      "isTypeSupported_static": {
         "__compat": {
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/isTypeSupported",
+          "description": "`isTypeSupported()` static method",
+          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/isTypeSupported_static",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-istypesupported",
           "support": {
             "chrome": {
@@ -274,11 +293,14 @@
               "version_added": "36"
             },
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -307,7 +329,7 @@
             "edge": "mirror",
             "firefox": {
               "version_added": "25",
-              "notes": "Starting with Firefox 71, the behavior of <code>mimeType</code> is more consistent. For example, it now returns the media type even after recording has stopped."
+              "notes": "Starting with Firefox 71, the behavior of `mimeType` is more consistent. For example, it now returns the media type even after recording has stopped."
             },
             "firefox_android": {
               "version_added": "25"
@@ -323,11 +345,14 @@
               "version_added": "36"
             },
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -361,7 +386,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -372,7 +398,7 @@
       },
       "pause_event": {
         "__compat": {
-          "description": "<code>pause</code> event",
+          "description": "`pause` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/pause_event",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onpause",
           "support": {
@@ -396,7 +422,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -426,11 +453,14 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -464,7 +494,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -475,7 +506,7 @@
       },
       "resume_event": {
         "__compat": {
-          "description": "<code>resume</code> event",
+          "description": "`resume` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/resume_event",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onresume",
           "support": {
@@ -499,7 +530,8 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -533,11 +565,14 @@
               "version_added": "36"
             },
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -548,7 +583,7 @@
       },
       "start_event": {
         "__compat": {
-          "description": "<code>start</code> event",
+          "description": "`start` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/start_event",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onstart",
           "support": {
@@ -568,11 +603,14 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -614,11 +652,14 @@
               "version_added": "36"
             },
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -648,11 +689,14 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -663,7 +707,7 @@
       },
       "stop_event": {
         "__compat": {
-          "description": "<code>stop</code> event",
+          "description": "`stop` event",
           "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/stop_event",
           "spec_url": "https://w3c.github.io/mediacapture-record/#dom-mediarecorder-onstop",
           "support": {
@@ -683,11 +727,14 @@
             "opera": "mirror",
             "opera_android": "mirror",
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -729,13 +776,16 @@
               "version_added": "36"
             },
             "safari": {
+              "version_added": "14.1"
+            },
+            "safari_ios": {
               "version_added": "14"
             },
-            "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
             "webview_android": {
               "version_added": "49"
-            }
+            },
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -769,49 +819,13 @@
             },
             "safari_ios": "mirror",
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
             "standard_track": true,
             "deprecated": false
-          }
-        }
-      },
-      "warning_event": {
-        "__compat": {
-          "description": "<code>warning</code> event",
-          "mdn_url": "https://developer.mozilla.org/docs/Web/API/MediaRecorder/warning_event",
-          "support": {
-            "chrome": {
-              "version_added": "49"
-            },
-            "chrome_android": "mirror",
-            "edge": "mirror",
-            "firefox": {
-              "version_added": "25",
-              "version_removed": "71"
-            },
-            "firefox_android": {
-              "version_added": "25"
-            },
-            "ie": {
-              "version_added": false
-            },
-            "oculus": "mirror",
-            "opera": "mirror",
-            "opera_android": "mirror",
-            "safari": {
-              "version_added": false
-            },
-            "safari_ios": "mirror",
-            "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
-          },
-          "status": {
-            "experimental": false,
-            "standard_track": true,
-            "deprecated": true
           }
         }
       }

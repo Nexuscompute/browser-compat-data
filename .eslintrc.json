@@ -7,18 +7,17 @@
   "plugins": [
     "@typescript-eslint",
     "import",
-    "prettier",
     "jsdoc",
     "prefer-arrow-functions",
     "unicorn"
   ],
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/stylistic",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:prettier/recommended",
-    "plugin:jsdoc/recommended"
+    "plugin:jsdoc/recommended-typescript"
   ],
   "settings": {
     "import/resolver": {
@@ -66,10 +65,7 @@
         }
       }
     ],
-    "jsdoc/require-param-type": "error",
     "jsdoc/require-returns": "error",
-    "jsdoc/require-returns-type": "error",
-    "jsdoc/no-undefined-types": "error",
     "jsdoc/require-yields": "error",
     "linebreak-style": ["error", "unix"],
     "no-console": "off",
@@ -87,7 +83,6 @@
       { "returnStyle": "implicit" }
     ],
     "prefer-const": "error",
-    "prettier/prettier": "error",
     "quotes": "off",
     "unicorn/prefer-node-protocol": "error"
   }

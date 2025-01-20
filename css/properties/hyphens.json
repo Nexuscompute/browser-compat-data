@@ -4,7 +4,10 @@
       "hyphens": {
         "__compat": {
           "mdn_url": "https://developer.mozilla.org/docs/Web/CSS/hyphens",
-          "spec_url": "https://w3c.github.io/csswg-drafts/css-text/#hyphens-property",
+          "spec_url": "https://drafts.csswg.org/css-text/#hyphens-property",
+          "tags": [
+            "web-features:hyphens"
+          ],
           "support": {
             "chrome": [
               {
@@ -51,16 +54,27 @@
             "oculus": "mirror",
             "opera": "mirror",
             "opera_android": "mirror",
-            "safari": {
-              "prefix": "-webkit-",
-              "version_added": "5.1"
-            },
-            "safari_ios": {
-              "prefix": "-webkit-",
-              "version_added": "4.2"
-            },
+            "safari": [
+              {
+                "version_added": "17"
+              },
+              {
+                "prefix": "-webkit-",
+                "version_added": "5.1"
+              }
+            ],
+            "safari_ios": [
+              {
+                "version_added": "17"
+              },
+              {
+                "prefix": "-webkit-",
+                "version_added": "4.2"
+              }
+            ],
             "samsunginternet_android": "mirror",
-            "webview_android": "mirror"
+            "webview_android": "mirror",
+            "webview_ios": "mirror"
           },
           "status": {
             "experimental": false,
@@ -68,9 +82,12 @@
             "deprecated": false
           }
         },
-        "auto_value": {
+        "auto": {
           "__compat": {
-            "description": "Support for the <code>auto</code> value",
+            "description": "`auto` value",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": [
                 {
@@ -103,7 +120,8 @@
                 "version_added": "4.2"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -115,9 +133,12 @@
         "language_afrikaans": {
           "__compat": {
             "description": "Hyphenation dictionary for Afrikaans (af, af-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -136,7 +157,267 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_albanian": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Albanian (sq, sq-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_amharic": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Ahmaric (am, am-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_armenian": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Armenian (hy, hy-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_assamese": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Assamese (as, as-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_basque": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Basque (be, be-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_belarusian": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Belarusian (be, be-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_bengali": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Bengali (bn, bn-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -147,7 +428,10 @@
         },
         "language_bosnian": {
           "__compat": {
-            "description": "Hyphenation dictionary for Bosnian, Serbian, and Serbo-Croatian (sh, sh-*, sr, sr-*, bs, bs-*)",
+            "description": "Hyphenation dictionary for Bosnian, Serbian, and Serbo-Croatian (sh, sh-\\*, sr, sr-\\*, bs, bs-\\*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -169,7 +453,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -181,9 +466,12 @@
         "language_bulgarian": {
           "__compat": {
             "description": "Hyphenation dictionary for Bulgarian (bg, bg-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -202,7 +490,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -214,6 +503,9 @@
         "language_catalan": {
           "__compat": {
             "description": "Hyphenation dictionary for Catalan (ca, ca-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -235,7 +527,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -247,9 +540,12 @@
         "language_croatian": {
           "__compat": {
             "description": "Hyphenation dictionary for Croatian (hr, hr-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -268,7 +564,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_cyrillic_mongolian": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Mongolian (Cyrillic) (mn-cyrl, mn-cyrl-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -280,14 +614,17 @@
         "language_czech": {
           "__compat": {
             "description": "Hyphenation dictionary for Czech (cs, cs-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": false
+                "version_added": "130"
               },
               "firefox_android": "mirror",
               "ie": {
@@ -301,7 +638,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -313,9 +651,12 @@
         "language_danish": {
           "__compat": {
             "description": "Hyphenation dictionary for Danish (da, da-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -334,7 +675,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -346,9 +688,12 @@
         "language_dutch": {
           "__compat": {
             "description": "Hyphenation dictionary for Dutch (nl, nl-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -367,7 +712,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -379,6 +725,9 @@
         "language_english": {
           "__compat": {
             "description": "Hyphenation dictionary for English (en, en-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": "55"
@@ -408,7 +757,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -420,6 +770,9 @@
         "language_esperanto": {
           "__compat": {
             "description": "Hyphenation dictionary for Esperanto (eo, eo-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -441,7 +794,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -453,9 +807,12 @@
         "language_estonian": {
           "__compat": {
             "description": "Hyphenation dictionary for Estonian (et, et-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -474,7 +831,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -483,9 +841,86 @@
             }
           }
         },
-        "language_finish": {
+        "language_ethiopic_script_mul": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Ethiopic script (mul-ethi, mul-ethi-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_ethiopic_script_und": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Ethiopic script (und-ethi, und-ethi-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_finnish": {
           "__compat": {
             "description": "Hyphenation dictionary for Finnish (fi, fi-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -507,7 +942,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -519,9 +955,12 @@
         "language_french": {
           "__compat": {
             "description": "Hyphenation dictionary for French (fr, fr-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -540,7 +979,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -552,9 +992,12 @@
         "language_galician": {
           "__compat": {
             "description": "Hyphenation dictionary for Galician (gl, gl-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -573,7 +1016,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_georgian": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Georgian (ka, ka-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -585,9 +1066,12 @@
         "language_german_reformed_orthography": {
           "__compat": {
             "description": "Hyphenation dictionary for German, Reformed Orthography of 1996 (de, de-1996, de-DE, de-AT, de-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -606,7 +1090,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -618,9 +1103,12 @@
         "language_german_swiss_orthography": {
           "__compat": {
             "description": "Hyphenation dictionary for German, Swiss Orthography (de-CH, de-CH-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -639,7 +1127,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -651,9 +1140,12 @@
         "language_german_traditional_orthography": {
           "__compat": {
             "description": "Hyphenation dictionary for German, Traditional Orthography of 1901 (de-1901, de-AT-1901, de-DE-1901)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -672,7 +1164,82 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_gujarati": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Gujarati (gu, gu-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_hindi": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Hindi (hi, hi-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -684,9 +1251,12 @@
         "language_hungarian": {
           "__compat": {
             "description": "Hyphenation dictionary for Hungarian (hu, hu-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -705,7 +1275,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -717,6 +1288,9 @@
         "language_icelandic": {
           "__compat": {
             "description": "Hyphenation dictionary for Icelandic (is, is-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -738,7 +1312,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -750,6 +1325,9 @@
         "language_interlingua": {
           "__compat": {
             "description": "Hyphenation dictionary for Interlingua (ia, ia-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -771,7 +1349,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_irish": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Irish (ga, ga-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -783,9 +1399,12 @@
         "language_italian": {
           "__compat": {
             "description": "Hyphenation dictionary for Italian (it, it-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -804,7 +1423,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_kannada": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Kannada (kn, kn-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -816,6 +1473,9 @@
         "language_kurmanji": {
           "__compat": {
             "description": "Hyphenation dictionary for Kurmanji (kmr, kmr-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -837,7 +1497,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -849,9 +1510,12 @@
         "language_latin": {
           "__compat": {
             "description": "Hyphenation dictionary for Latin (la, la-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -870,7 +1534,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_latvian": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Latvian (lv, lv-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -882,9 +1584,12 @@
         "language_lithuanian": {
           "__compat": {
             "description": "Hyphenation dictionary for Lithuanian (lt, lt-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -903,7 +1608,119 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_malayalam": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Malayalam (ml, ml-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_marathi": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Marathi (mr, mr-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_modern_greek": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Modern Greek (el, el-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -915,6 +1732,9 @@
         "language_mongolian": {
           "__compat": {
             "description": "Hyphenation dictionary for Mongolian (mn, mn-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -936,7 +1756,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -947,10 +1768,13 @@
         },
         "language_norwegian_nn": {
           "__compat": {
-            "description": "Hyphenation dictionary for Norwegian (Nynorsk) (nn, nn-*)",
+            "description": "Hyphenation dictionary for Norwegian (Nynorsk) (nn, nn-\\*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -971,7 +1795,8 @@
                 "version_added": "5"
               },
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -982,10 +1807,13 @@
         },
         "language_norwegian_no": {
           "__compat": {
-            "description": "Hyphenation dictionary for Norwegian (Bokmål) (no, no-*, nb, nb-*)",
+            "description": "Hyphenation dictionary for Norwegian (Bokmål) (no, no-\\*, nb, nb-\\*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1004,7 +1832,82 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_old_slavonic": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Old Slavonic (cu, cu-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_oriya": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Oriya (or, or-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1016,6 +1919,9 @@
         "language_polish": {
           "__compat": {
             "description": "Hyphenation dictionary for Polish (pl, pl-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -1037,7 +1943,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1049,9 +1956,12 @@
         "language_portuguese": {
           "__compat": {
             "description": "Hyphenation dictionary for Portuguese (pt, pt-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1070,7 +1980,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1079,18 +1990,20 @@
             }
           }
         },
-        "language_portuguese_brazilian": {
+        "language_punjabi": {
           "__compat": {
-            "description": "Hyphenation dictionary for Brazilian Portuguese (pt-BR)",
+            "description": "Hyphenation dictionary for Punjabi/Panjabi (pa, pa-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
               "firefox": {
-                "version_added": "8",
-                "notes": "For Brazilian Portuguese, Firefox uses a Portuguese dictionary."
+                "version_added": false
               },
               "firefox_android": "mirror",
               "ie": {
@@ -1104,7 +2017,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1116,9 +2030,12 @@
         "language_russian": {
           "__compat": {
             "description": "Hyphenation dictionary for Russian (ru, ru-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1137,7 +2054,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_slovak": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Slovak (sk, sk-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "112"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": "130"
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1149,9 +2104,12 @@
         "language_slovenian": {
           "__compat": {
             "description": "Hyphenation dictionary for Slovenian (sl, sl-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1170,7 +2128,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1182,9 +2141,12 @@
         "language_spanish": {
           "__compat": {
             "description": "Hyphenation dictionary for Spanish (es, es-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1203,7 +2165,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1215,9 +2178,12 @@
         "language_swedish": {
           "__compat": {
             "description": "Hyphenation dictionary for Swedish (sv, sv-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1236,7 +2202,82 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_tamil": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Tamil (ta, ta-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_telugu": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Telugu (te, te-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1248,6 +2289,9 @@
         "language_turkish": {
           "__compat": {
             "description": "Hyphenation dictionary for Turkish (tr, tr-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -1269,7 +2313,45 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
+            },
+            "status": {
+              "experimental": false,
+              "standard_track": true,
+              "deprecated": false
+            }
+          }
+        },
+        "language_turkmen": {
+          "__compat": {
+            "description": "Hyphenation dictionary for Turkmen (tk, tk-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
+            "support": {
+              "chrome": {
+                "version_added": "87"
+              },
+              "chrome_android": "mirror",
+              "edge": "mirror",
+              "firefox": {
+                "version_added": false
+              },
+              "firefox_android": "mirror",
+              "ie": {
+                "version_added": false
+              },
+              "oculus": "mirror",
+              "opera": "mirror",
+              "opera_android": "mirror",
+              "safari": {
+                "version_added": false
+              },
+              "safari_ios": "mirror",
+              "samsunginternet_android": "mirror",
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1281,9 +2363,12 @@
         "language_ukrainian": {
           "__compat": {
             "description": "Hyphenation dictionary for Ukrainian (uk, uk-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "112"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1302,7 +2387,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1314,6 +2400,9 @@
         "language_upper_sorbian": {
           "__compat": {
             "description": "Hyphenation dictionary for Upper Sorbian (hsb, hsb-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
                 "version_added": false
@@ -1335,7 +2424,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
@@ -1347,9 +2437,12 @@
         "language_welsh": {
           "__compat": {
             "description": "Hyphenation dictionary for Welsh (cy, cy-*)",
+            "tags": [
+              "web-features:hyphens"
+            ],
             "support": {
               "chrome": {
-                "version_added": false
+                "version_added": "87"
               },
               "chrome_android": "mirror",
               "edge": "mirror",
@@ -1368,7 +2461,8 @@
               },
               "safari_ios": "mirror",
               "samsunginternet_android": "mirror",
-              "webview_android": "mirror"
+              "webview_android": "mirror",
+              "webview_ios": "mirror"
             },
             "status": {
               "experimental": false,
